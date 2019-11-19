@@ -1,0 +1,57 @@
+{
+  "juego": {
+    "ancho": 4,
+    "alto": 4,
+    "posiciones": [
+      {
+        "piece": "S",
+        "side": "ROJO",
+        "y": 0,
+        "x": 1
+      },
+      {
+        "piece": "C",
+        "side": "ROJO",
+        "y": 0,
+        "x": 2
+      },
+      {
+        "piece": "D",
+        "side": "ROJO",
+        "y": 0,
+        "x": 3
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 1,
+        "x": 0
+      },
+      {
+        "piece": "H",
+        "side": "AZUL",
+        "y": 2,
+        "x": 1
+      },
+      {
+        "piece": "I",
+        "side": "AZUL",
+        "y": 2,
+        "x": 3
+      },
+      {
+        "piece": "C",
+        "side": "AZUL",
+        "y": 3,
+        "x": 1
+      },
+      {
+        "piece": "D",
+        "side": "AZUL",
+        "y": 3,
+        "x": 2
+      }
+    ]
+  }
+}
+

@@ -1,0 +1,296 @@
+{
+  "juego": {
+    "ancho": 12,
+    "alto": 10,
+    "posiciones": [
+      {
+        "piece": "H",
+        "side": "ROJO",
+        "y": 0,
+        "x": 1
+      },
+      {
+        "piece": "D",
+        "side": "ROJO",
+        "y": 0,
+        "x": 3
+      },
+      {
+        "piece": "H",
+        "side": "ROJO",
+        "y": 0,
+        "x": 7
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 1,
+        "x": 0
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 1,
+        "x": 0
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 1,
+        "x": 2
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 1,
+        "x": 3
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 1,
+        "x": 4
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 1,
+        "x": 9
+      },
+      {
+        "piece": "S",
+        "side": "ROJO",
+        "y": 2,
+        "x": 0
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 2,
+        "x": 3
+      },
+      {
+        "piece": "I",
+        "side": "ROJO",
+        "y": 2,
+        "x": 4
+      },
+      {
+        "piece": "S",
+        "side": "ROJO",
+        "y": 2,
+        "x": 5
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 2,
+        "x": 8
+      },
+      {
+        "piece": "S",
+        "side": "ROJO",
+        "y": 2,
+        "x": 9
+      },
+      {
+        "piece": "I",
+        "side": "AZUL",
+        "y": 3,
+        "x": 4
+      },
+      {
+        "piece": "H",
+        "side": "ROJO",
+        "y": 3,
+        "x": 9
+      },
+      {
+        "piece": "S",
+        "side": "AZUL",
+        "y": 1,
+        "x": 6
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 4,
+        "x": 3
+      },
+      {
+        "piece": "S",
+        "side": "AZUL",
+        "y": 4,
+        "x": 7
+      },
+      {
+        "piece": "C",
+        "side": "AZUL",
+        "y": 5,
+        "x": 2
+      },
+      {
+        "piece": "C",
+        "side": "AZUL",
+        "y": 5,
+        "x": 6
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 5,
+        "x": 8
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 5,
+        "x": 9
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 6,
+        "x": 1
+      },
+      {
+        "piece": "I",
+        "side": "AZUL",
+        "y": 6,
+        "x": 3
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 6,
+        "x": 4
+      },
+      {
+        "piece": "I",
+        "side": "AZUL",
+        "y": 6,
+        "x": 5
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 6,
+        "x": 7
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 7,
+        "x": 0
+      },
+      {
+        "piece": "H",
+        "side": "AZUL",
+        "y": 7,
+        "x": 8
+      },
+      {
+        "piece": "D",
+        "side": "AZUL",
+        "y": 8,
+        "x": 4
+      },
+      {
+        "piece": "H",
+        "side": "ROJO",
+        "y": 1,
+        "x": 10
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 2,
+        "x": 11
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 3,
+        "x": 11
+      },
+      {
+        "piece": "I",
+        "side": "AZUL",
+        "y": 4,
+        "x": 10
+      },
+      {
+        "piece": "D",
+        "side": "AZUL",
+        "y": 8,
+        "x": 11
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 1,
+        "x": 11
+      },
+      {
+        "piece": "D",
+        "side": "AZUL",
+        "y": 2,
+        "x": 10
+      },
+      {
+        "piece": "D",
+        "side": "AZUL",
+        "y": 3,
+        "x": 2
+      },
+      {
+        "piece": "G",
+        "side": "ROJO",
+        "y": 3,
+        "x": 10
+      },
+      {
+        "piece": "H",
+        "side": "ROJO",
+        "y": 4,
+        "x": 6
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 6,
+        "x": 0
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 8,
+        "x": 0
+      },
+      {
+        "piece": "I",
+        "side": "ROJO",
+        "y": 8,
+        "x": 2
+      },
+      {
+        "piece": "S",
+        "side": "AZUL",
+        "y": 9,
+        "x": 1
+      },
+      {
+        "piece": "G",
+        "side": "AZUL",
+        "y": 9,
+        "x": 2
+      },
+      {
+        "piece": "D",
+        "side": "AZUL",
+        "y": 9,
+        "x": 3
+      }
+    ]
+  }
+}
