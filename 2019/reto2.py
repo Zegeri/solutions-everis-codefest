@@ -1,30 +1,28 @@
 import json
 
-# Escribe aquí la localización del archivo json con las posiciones del tablero
-juego = "data/jugada2.json"
+def reto2(filename):
+	# Objeto que guardará las posiciones del tablero
+	pos = {}
 
-# Objeto global que guardará las posiciones del tablero
-pos = {}
-
-def checkdie(x,y,eq):
-	""" Mata una pieza enemiga en (x,y). Devuelve True sii había una pieza en esa posición,
-	    incluso si era una pieza amiga
-	"""
-	if (x,y) not in pos:
-		return False
-	if pos[x,y][1] != eq:
-		pos[x,y] = (pos[x,y][0], pos[x,y][1], 1)
-	return True
-
-with open(juego) as f:
 	# Cargar tablero
-	t = json.load(f)
+	with open(filename) as f:
+		t = json.load(f)
 	ancho = 2*int(t['juego']['ancho'])+1
 	alto = 2*int(t['juego']['alto'])+1
 	tamaño = max(ancho,alto)
 	# Guardamos las posiciones en un diccionario global y las marcamos como vivas
 	for x in t['juego']['posiciones']:
 		pos[x['x'],x['y']] = (x['piece'], x['side'], 0)
+
+	def checkdie(x,y,eq):
+		""" Mata una pieza enemiga en (x,y). Devuelve True sii había una pieza en esa posición,
+		    incluso si era una pieza amiga
+		"""
+		if (x,y) not in pos:
+			return False
+		if pos[x,y][1] != eq:
+			pos[x,y] = (pos[x,y][0], pos[x,y][1], 1)
+		return True
 
 	# Vamos pieza por pieza y marcamos las demás piezas que puede matar
 	for xx,yy in pos:
@@ -109,3 +107,6 @@ with open(juego) as f:
 		print("Azules {}d".format(ptsazules))
 	if (ptsazules == ptsrojos):
 		print("Empate {}d".format(ptsrojos))
+
+reto2("data/jugada1.json")
+reto2("data/jugada2.json")
