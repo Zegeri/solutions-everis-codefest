@@ -1,4 +1,4 @@
-from datetime import datetime, timedelta, time, date
+from datetime import datetime, timedelta
 import json
 
 # Cargar pedidos
@@ -71,24 +71,3 @@ def reto4(x):
 reto4(1)
 reto4(25)
 reto4(115)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -6,27 +6,15 @@ juego = "data/jugada2.json"
 # Objeto global que guardará las posiciones del tablero
 pos = {}
 
-def check(x,y,eq):
-	""" Devuelve 1 si hay una pieza del mismo equipo en la posición (x,y) del tablero,
-	    2 si es del otro equipo y 0 si no hay pieza
-	"""
-	global pos
-	if (x,y) not in pos:
-		return 0
-	elif pos[x,y][1] == eq:
-		return 1
-	elif pos[x,y][1] != eq:
-		return 2
-
 def checkdie(x,y,eq):
 	""" Mata una pieza enemiga en (x,y). Devuelve True sii había una pieza en esa posición,
 	    incluso si era una pieza amiga
 	"""
-	c = check(x,y,eq)
-	if c == 2:
-		# Marcar pieza como muerta
+	if (x,y) not in pos:
+		return False
+	if pos[x,y][1] != eq:
 		pos[x,y] = (pos[x,y][0], pos[x,y][1], 1)
-	return c != 0
+	return True
 
 with open(juego) as f:
 	# Cargar tablero
@@ -34,14 +22,13 @@ with open(juego) as f:
 	ancho = 2*int(t['juego']['ancho'])+1
 	alto = 2*int(t['juego']['alto'])+1
 	tamaño = max(ancho,alto)
-	pos = {}
 	# Guardamos las posiciones en un diccionario global y las marcamos como vivas
 	for x in t['juego']['posiciones']:
 		pos[x['x'],x['y']] = (x['piece'], x['side'], 0)
 
-	# Vamos pieza por pieza y marcamos las piezas que puede matar
+	# Vamos pieza por pieza y marcamos las demás piezas que puede matar
 	for xx,yy in pos:
-		p,eq,status = pos[xx,yy]
+		p,eq,status = pos[xx,yy] # pieza, equipo, estado (viva/muerta)
 		
 		# Spiderman o Ironman (movimiento alfil)
 		if p == "S" or p == "I":
@@ -102,7 +89,6 @@ with open(juego) as f:
 			checkdie(xx+1,yy-1,eq)
 			checkdie(xx-1,yy+1,eq)
 			checkdie(xx-1,yy-1,eq)
-
 
 	# Calcular puntos de piezas muertas
 	puntos = {'C':3,'H':2,'S':4,'D':9,'I':7,'G':1}
